@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://gui/dialog/dialogController.gd" type="Script" id=1]
+
+[node name="Dialog" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Container" type="VBoxContainer" parent="."]
+margin_left = 32.0
+margin_top = 650.0
+margin_right = 992.0
+margin_bottom = 776.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Container"]
+margin_right = 960.0
+margin_bottom = 14.0
+text = "Person Name"
+
+[node name="Background" type="ColorRect" parent="Container"]
+margin_top = 18.0
+margin_right = 960.0
+margin_bottom = 126.0
+size_flags_vertical = 3
+color = Color( 0, 0, 0, 1 )
+
+[node name="Spacing" type="MarginContainer" parent="Container/Background"]
+margin_left = 32.0
+margin_top = 16.0
+margin_right = 936.0
+margin_bottom = 92.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="RichTextLabel" parent="Container/Background/Spacing"]
+margin_right = 904.0
+margin_bottom = 76.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="."]
